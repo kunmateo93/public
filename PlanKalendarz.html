@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+    <link href='fullcalendar.css' rel='stylesheet' />
+    <link href='fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='moment.min.js'></script>
+    <script src='jquery.min.js'></script>
+    <script src='fullcalendar.min.js'></script>
+    <script src='fullcalendar.js'></script>
+    <script src='lang-all.js'></script>
+    <script src='pl.js'></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Default.css">
+    <script src="plan.js"></script>
+    <title></title>
+</head>
+<body style="background:white">
+    <div style="top:30%;" id="popup" class="modal fade in bs-example-modal-lg" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <h2> Wybierz kryteria wyświetlanych przedmiotów:</h2>
+                <br />
+                <select style=" height:auto; font-size:24px" class="form-control" id="filter3">
+                    <option id="Option7" value="informatyka"><h3>Informatyka</h3></option>
+                    <option id="Option8" value="matematyka">Matematyka</option>
+                    <option id="Option9" value="ALL">Wszystkie...</option>
+                </select>
+                <select style=" height:auto; font-size:24px" class="form-control dropdown" id="filter4">
+                  
+                        <option id="Option10" value="1">Rok 1</option>
+                        <option id="Option11" value="2">Rok 2</option>
+                        <option id="Option12" value="3">Rok 3</option>
+           
+                </select>
+                <br />
+                <br />
+                <button class="btn btn-primary btn-lg btn-block btn-huge  center-block" data-loading-text="Loading..."  type="submit" id="submitFiltr2">
+                    Pokaż przedmioty...</button>
+            </div>
+        </div>
+    </div>
+
+<div id="main"> 
+<div class="carousel slide" style="background-color: #2b3968">
+        <div class="masthead">
+            <img class="img-responsive center-block" src="background.png" />
+        </div>
+    </div>
+
+    <h2 style="font-family:Bookman Old Style; font-size:50px" class="text-center">PLAN ZAJĘĆ</h2>
+<div class="container" style="background-color: #e75045;  box-shadow: 0 0 30px black;">
+    
+    <div class="row marketing " style="background-color: white">
+   
+        <div class="col-lg-2 container-fluid" >
+            <div class="container-fluid " style="background-color: white">
+                <select class="form-control" id="filter">
+                    <option id="Option1" value="informatyka">Informatyka</option>
+                    <option id="Option2" value="matematyka">Matematyka</option>
+                    <option id="Option3" value="ALL">Wszystkie...</option>
+                </select>
+                <select class="form-control  " id="filter2">
+                    <option id="Option4" value="1">Rok 1</option>
+                    <option id="Option5" value="2">Rok 2</option>
+                    <option id="Option6" value="3">Rok 3</option>
+                </select>
+                </br> </br>
+               <!-- <button class="btn btn-default center-block" type="submit"
+                    id="submitFiltr">
+                    Filtruj...</button>-->
+            </div>
+        </div>
+       
+        <div class="col-lg-10 no-float">
+      <div  style=" background-color:white" id="calendar">
+</div>
+</div>
+        </div>
+    </div>
+    </div>
+    <!--</div>-->
+</body>
+</html>

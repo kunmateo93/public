@@ -1,0 +1,9 @@
+"scripts": {
+  "start": "node app.js"
+},
+"main": "app.js",
+ "author": "kunmateo93",
+  "dependencies": {
+    "express": ">= 1.2.0",
+    "mongojs": ">= 0.1.0"
+  }
