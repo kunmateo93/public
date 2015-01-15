@@ -1,9 +1,18 @@
-`{
-  "scripts": {
-  "start": "node app.js"
-},
-"main": "app.js",
-"dependencies": {
-    "express": ">= 1.2.0",
+{"repository"  : {
+        "type": "git",
+        "url": "git://github.com/kunmateo93/public"
+    },
+    "main": "app.js",
+    "scripts": {
+        "start": "node app"
+    },
+    "engines": {
+        "node": "~0.10.0"
+    },
+    "engineStrict": true,
+    "dependencies": {
+   "express": ">= 1.2.0",
     "mongojs": ">= 0.1.0"
-}`
+    }
+}
+
